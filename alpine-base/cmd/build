@@ -1,0 +1,6 @@
+#!/bin/sh
+cd $(dirname $0)/..
+echo "Building Alpine Base"
+echo "Current dir: $(pwd)"
+docker build -t alpine-base -f Dockerfile .
+
